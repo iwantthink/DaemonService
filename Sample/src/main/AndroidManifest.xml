@@ -18,7 +18,10 @@
             </intent-filter>
         </activity>
 
-        <service android:name=".HeartBeatService"/>
+        <service android:name=".HeartBeatService"
+            android:exported="true"
+                 android:process=":Test"
+            ></service>
 
     </application>
 

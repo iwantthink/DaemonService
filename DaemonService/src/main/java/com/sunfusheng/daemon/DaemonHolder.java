@@ -46,8 +46,11 @@ public class DaemonHolder {
                 Log.d(TAG, "启动 JobService");
             }
 
-            mContext.getPackageManager().setComponentEnabledSetting(new ComponentName(mContext.getPackageName(), mService.getName()),
-                    PackageManager.COMPONENT_ENABLED_STATE_ENABLED, PackageManager.DONT_KILL_APP);
+            mContext.getPackageManager().setComponentEnabledSetting(
+                    new ComponentName(mContext.getPackageName(),
+                            mService.getName()),
+                    PackageManager.COMPONENT_ENABLED_STATE_ENABLED,
+                    PackageManager.DONT_KILL_APP);
         }
     }
 
